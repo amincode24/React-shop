@@ -1,0 +1,55 @@
+.cart-items {
+    list-style-type: none;
+    max-height: 20rem;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.total-text {
+    color: #000;
+    font-weight: bold;
+    margin: 0 3.5rem;
+    font-size: 15px;
+}
+
+.total-amount {
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button {
+    background-color: #ffffff;
+    border: 2px solid #229EFF;
+    outline: none;
+    color: #229EFF;
+    transition: 0.3s;
+    font-size: 16px;
+    padding: 0.25rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 0.1rem;
+}
+
+.button:hover {
+    background-color: #229EFF;
+    color: #ffffff;
+}

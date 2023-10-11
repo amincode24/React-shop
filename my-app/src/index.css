@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.dark {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  background-color: white;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #229EFF;
+  border-radius: 15px;
+}

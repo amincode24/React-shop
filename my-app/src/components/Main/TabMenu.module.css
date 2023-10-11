@@ -1,0 +1,34 @@
+
+
+.tablist {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.active {
+    background-color: #229EFF;
+    color: #ffffff;
+}
+
+.panel ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+    .panel ul {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,37 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: auto;
+    right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #ffffff6a;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 35px;
+}
+
+.button {
+    color: #229EFF;
+}
+
+.button:hover {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 576px) {
+    .nav {
+        right: 0;
+        left: 100px;
+    }
+}

@@ -1,0 +1,14 @@
+.number input {
+    width: 8.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding: 0;
+    font-size: 15px;
+    padding: 6px;
+    outline: none;
+}
+
+.number input:focus {
+    border: 1px solid #229EFF;
+}
