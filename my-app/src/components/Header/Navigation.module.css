@@ -1,37 +1,65 @@
 .nav {
-    width: 100%;
-    position: fixed;
-    bottom: 10px;
-    left: auto;
-    right: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  right: 20px;
+  bottom: 20px;
 }
-
-.menu {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #ffffff6a;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.75);
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 35px;
-}
-
 .button {
-    color: #229EFF;
+  color: var(--color-black);
+  background-color: var(--color-gold);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .button:hover {
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
+  color: var(--color-gold);
+  background-color: var(--color-black);
 }
 
-@media (max-width: 576px) {
-    .nav {
-        right: 0;
-        left: 100px;
-    }
+.badge {
+  position: absolute;
+  font-size: 14px;
+  top: 28px;
+  left: 39px;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.button:hover .badge {
+  color: var(--color-black);
+}
+
+@media (max-width: 674px) {
+  .button {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .badge {
+    position: absolute;
+    font-size: 10px;
+    top: 22px;
+    left: 30px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 510px) {
+  .button {
+    background-color: var(--color-black);
+    color: var(--color-gold);
+  }
+  .badge {
+    color: var(--color-black);
+  }
 }

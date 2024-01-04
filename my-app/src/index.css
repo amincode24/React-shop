@@ -1,31 +1,36 @@
+@font-face {
+  font-family: josefinsans;
+  src: url("./fonts/JosefinSans-Thin.ttf");
+}
+
+@font-face {
+  font-family: Dancingscripts;
+  src: url("./fonts/DancingScript-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
 
-html {
-  font-family: sans-serif;
-}
-
 body {
   margin: 0;
-}
-
-.dark {
-  background-color: #000;
-  color: #ffffff;
-}
-
-.light {
-  background-color: #ffffff;
-  color: #000;
+  background: var(--color-dark-gey);
 }
 
 ::-webkit-scrollbar {
-  background-color: white;
+  background-color: var(--color-gold);
   width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #229EFF;
+  background-color: var(--color-black);
   border-radius: 15px;
+}
+
+:root {
+  --font-josefinsans: "josefinsans";
+  --font-dancingscripts: "Dancingscripts";
+  --color-gold: #d3ab55;
+  --color-black: #000;
+  --color-dark-gey: #222;
 }

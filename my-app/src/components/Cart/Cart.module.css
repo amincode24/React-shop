@@ -1,55 +1,62 @@
 .cart-items {
-    list-style-type: none;
-    max-height: 20rem;
-    overflow: auto;
-    padding: 1rem;
+  list-style-type: none;
+  max-height: 20rem;
+  overflow: auto;
+  padding: 1rem;
 }
 
 .total {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.5rem 0;
 }
 
 .total-text {
-    color: #000;
-    font-weight: bold;
-    margin: 0 3.5rem;
-    font-size: 15px;
+  color: var(--color-black);
+  font-weight: bold;
+  margin: 0 3.5rem;
+  font-size: 20px;
+  font-family: var(--font-josefinsans);
+  font-weight: 900;
 }
 
 .total-amount {
-    color: #000;
-    font-weight: bold;
-    font-size: 25px;
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 25px;
+  font-family: var(--font-dancingscripts);
 }
 
-h2 {
-    text-align: center;
+.empty {
+  text-align: center;
+  font-family: var(--font-dancingscripts);
+  font-size: 50px;
 }
 
 .actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .button {
-    background-color: #ffffff;
-    border: 2px solid #229EFF;
-    outline: none;
-    color: #229EFF;
-    transition: 0.3s;
-    font-size: 16px;
-    padding: 0.25rem 2rem;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 0 0.1rem;
+  background-color: transparent;
+  border: 2px solid var(--color-black);
+  outline: none;
+  color: var(--color-black);
+  transition: 0.3s;
+  font-size: 19px;
+  padding: 0.25rem 2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 0 0.1rem;
+  font-family: var(--font-josefinsans);
+  font-weight: 900;
 }
 
 .button:hover {
-    background-color: #229EFF;
-    color: #ffffff;
+  background-color: var(--color-black);
+  color: var(--color-gold);
 }

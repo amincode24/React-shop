@@ -34,20 +34,22 @@ const Cart = (props) => {
   );
   return (
     <Modal>
-        <div>
-          {cartItems}
-          {hasItem && (
-            <div className={classes.total}>
-              <span className={classes["total-text"]}>Total Amount</span>
-              <span className={classes["total-amount"]}>{totalAmount}</span>
-            </div>
-          )}
-          {!hasItem && <h2>Your Cart is empty</h2>}
-          <div className={classes.actions}>
-            {hasItem && <button className={classes.button}>Order</button>}
-            <button className={classes.button} onClick={props.onClose}>Close</button>
+      <div>
+        {cartItems}
+        {hasItem && (
+          <div className={classes.total}>
+            <span className={classes["total-text"]}>Total Amount</span>
+            <span className={classes["total-amount"]}>{totalAmount}</span>
           </div>
+        )}
+        {!hasItem && <h2 className={classes["empty"]}>Your Cart is empty</h2>}
+        <div className={classes.actions}>
+          {hasItem && <button className={classes.button}>Order</button>}
+          <button className={classes.button} onClick={props.onClose}>
+            Close
+          </button>
         </div>
+      </div>
     </Modal>
   );
 };

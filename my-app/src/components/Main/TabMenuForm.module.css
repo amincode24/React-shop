@@ -1,25 +1,25 @@
 .input {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.25rem;
 }
 
 .button {
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  color: #229EFF;
-  border: 1px solid #229EFF;
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
   padding: 0;
   font-size: 28px;
   border-radius: 5px;
 }
 
 .button:hover {
-  color: #ffffff;
-  background-color: #229EFF;
+  color: var(--color-gold);
+  background-color: var(--color-black);
 }
